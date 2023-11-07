@@ -23,7 +23,7 @@ header {
     display:flex;
     justify-content: space-between;
     width:100%;
-    max-width:2900px;
+    max-width:3900px;
     margin: auto;
 }/*
 #home {
@@ -184,7 +184,7 @@ header {
     display:flex;
     flex-direction: column;
     width:100%;
-    max-width:2900px;
+    max-width:3900px;
     background-color:transparent;
 }
 .videocontainer .video{
@@ -210,7 +210,7 @@ video{
 .videop p{
     color: #FFF;
     text-align: center;
-    font-family: Neue Haas Grotesk Display Pro;
+    font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 100.033px;
     font-style: normal;
     font-weight: 500;
@@ -219,7 +219,7 @@ video{
 
 .aboutcontainer{
     width: 100%;
-    max-width: 2290px;
+    max-width: 3290px;
     margin: auto;
     color: #FFF;
     background: linear-gradient(90deg, rgba(0, 16, 11, 0.00) 45.83%, #000403 65.63%), url(<path-to-image>), lightgray -202px -28.903px / 80.994% 103.87% no-repeat;
@@ -253,7 +253,7 @@ video{
 .servicescontainer{
     background-color: #fff;
     width: 100%;
-    max-width: 2290px;
+    max-width: 3290px;
     margin: auto;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -264,7 +264,7 @@ video{
     align-items: center;
     color: var(--pure-black, #000);
     text-align: center;
-    font-family: Neue Haas Grotesk Display Pro;
+    font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
@@ -290,16 +290,18 @@ video{
 .servicesgrid div{
     border-radius: 20px;
     width: 546px;
-    height: 410px;
+    height: 683px;
     padding:30px;
 }
 .servicesgrid ul, .servicesprincipal ul {
     position: absolute;
     list-style-position: inside;
-    font-family: Neue Haas Grotesk Display Pro;
+    font-family: 'Neue Haas Grotesk Display Pro';
     font-style: normal;
     font-weight: 500;
-    line-height: 158%; 
+    line-height: 158%;
+    max-width: 481px;     
+    letter-spacing: -0.5px;
 }
 .servicesgrid div svg, .servicesprincipal svg{
     z-index: 1;
@@ -309,7 +311,7 @@ video{
 .servicesgrid div h2, .servicesprincipal h2{
     position: absolute;
     color: #FFF;
-    font-family: Neue Haas Grotesk Display Pro;
+    font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
@@ -322,7 +324,7 @@ video{
 .servicesgrid div::before{
     content: "";
     background-color: rgba(0, 0, 0, 0.13);
-    border-radius: 20px;
+    border-radius: 32px;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -332,7 +334,7 @@ video{
 }
 .servicecard1{
     position: relative;
-    background-image: url(./assets/Screenshot_2.jpg);
+    background-image: url(./assets/Frame263.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     margin-right: 24px;
@@ -344,7 +346,7 @@ video{
 }
 .servicecard2{
     position: relative;
-    background-image: url(./assets/Screenshot_3.jpg);
+    background-image: url(./assets/Frame264.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -355,7 +357,7 @@ video{
 }
 .servicecard3{
     position: relative;
-    background-image: url(./assets/Screenshot_4.jpg);
+    background-image: url(./assets/Frame265.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-color: lightgray 50%;
@@ -363,23 +365,25 @@ video{
 }
 .servicecard3 ul{
     position:absolute;
-    bottom: 20;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 20px;
 }
 .servicecard4{
     position: relative;
-    background-image: url(./assets/Screenshot_1.jpg);
+    background-image: url(./assets/Frame266.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .servicecard4 ul{
     position:absolute;
-    bottom: 20;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 20px;
 }
 .servicesprincipal {
     position: relative;
-    background-image: url(./assets/card-5.jpg);
+    background-image: url(./assets/Frame268.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     border-radius: 20px;
@@ -393,11 +397,12 @@ video{
     position:absolute;
     bottom: 20;
     font-size: 24px;
+    max-width: 896px;
 }
 .servicesprincipal::before{
     content: "";
     background-color: rgba(0, 0, 0, 0.267);
-    border-radius: 20px;
+    border-radius: 32px;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -416,7 +421,7 @@ video{
     flex-direction: column;
     position: relative;
     width: 100%;
-    max-width: 1440px;
+    max-width: 940px;
     margin: auto;
 }
 .growth p{
@@ -435,7 +440,7 @@ video{
     position: absolute;
     width: 250px;
     top: 38;
-    right: 330;
+    right: 90;
     transform: rotate(5px);
 }
 .imglogo{
@@ -469,7 +474,7 @@ video{
     display: flex;
     flex-direction: column;
     color: #000;
-    font-family: Neue Haas Grotesk Display Pro;
+    font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
@@ -483,118 +488,6 @@ video{
     margin-top: 40px;
 }
 
-
-
-
-/*.container {
-position:relative;
-width: 100%;
-max-width: 2900px;
-margin: auto;
-background-color: #22837A;
-overflow: hidden;
-scroll-behavior: smooth;
-}
-.slider{
-display: flex;
-position:relative;
-justify-content:center;
-overflow: hidden;
-}
-
-.slider::-webkit-scrollbar {
-display:none
-}
-
-.slider.dragging {
-user-select:none
-}
-
-.slider.no-transition {
-scroll-behavior:smooth
-}
-
-/*.card {
-display: flex;
-flex-direction: column;
-overflow-x:auto;
-scroll-snap-type:x mandatory;
-scroll-behavior:smooth;
-scrollbar-width:0;
-flex: 1 0 100%;
-overflow: hidden;
-overflow-x:hidden;
-}*/
-/*.swiper-slide img{
-    display: block;
-    width: 100%;
-    max-width: 2990px;
-    margin: auto;
-    object-fit: cover;
-    user-select: none;
-}
-
-.slider a {
-flex:1 0 100%;
-scroll-snap-align:start;
-scroll-snap-type:none;
-object-fit:cover
-}
-
-.slider-nav {
-display:flex;
-column-gap:.5rem;
-position:absolute;
-bottom:1rem;
-left:50%;
-transform:translateX(-50%);
-z-index:1
-}
-
-.slider-nav a {
-width:.6rem;
-height:.6rem;
-border-radius:50%;
-background-color:#000;
-opacity:.5;
-transition:opacity ease 250ms
-}
-
-.slider-nav a:hover {
-opacity:1;
-background-color:#333;
-cursor:pointer
-}
-
-#left, #right{
-position:absolute;
-height:50px;
-width:50px;
-text-align:center;
-font-size:34px;
-font-style:normal;
-font-weight:400;
-color:#FFF;
-border: 1px white;
-border-radius:50%;
-cursor:pointer;
-top:50%;
-z-index: 999;
-}
-@media screen and (max-width: 550px) {
-    .slider-wrapper i {
-    top: 75%;
-    }
-}
-.slider-wrapper i:first-child {
-    position:absolute;
-left:2%
-}
-
-.slider-wrapper i:last-child {
-    position:absolute;
-right:2%
-}*/
 :root {
     --swiper-navigation-color: #fff;
     --swiper-pagination-color: #333333cc;
@@ -604,7 +497,7 @@ right:2%
 swiper-container {
     position:relative;
     width: 100%;
-    max-width: 2900px;
+    max-width: 3900px;
     margin: auto;
     background-color: #22837A;
     overflow: hidden;
