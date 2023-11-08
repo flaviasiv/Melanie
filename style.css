@@ -119,63 +119,145 @@ header {
 }
 
 
+.menu-linksbtn a:hover,
+.menu-linksbtn a.active {
+  transition: 0.5s ease-out;
+  letter-spacing: 1px;
+}
+.btn-toggle{display: none;}
+    
+@media only screen and (max-width: 1000px) {
+    
+    
+  .box{
+    width: fit-content;
+    height: 0vh;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+    opacity: 0;
+    left: -500px;
+    pointer-events: none;
+    transition: 0.3s;
+  }
 .btn-toggle {
     position:absolute;
-    right:3rem;
-    top:0;
+    right:30px;
+    top:8px;
     display:none;
     flex-direction:column;
     justify-content:space-between;
     width:15px;
-    height:15px
+    height:15px;
+    
 }
     
 .btn-toggle .bar {
     height:3px;
     width:100%;
-    background-color:#fff;
     border-radius:20px
 }
-    
-@media only screen and (max-width: 768px) {
-    .btn-toggle {
-    display:flex
-    }
-    
-    .menu-links{
-    display:none;
-    align-items:center;
-    width:100%;
-    height:200px
-    }
-    .menu-links ul{
-        display: block;
-    }
-    .menu-links a {
-    padding:.25rem 2rem
-    }
-    
-    .menu-links.active{
-    display:flex
-    }
-    .menusocial.active {
-        display:flex
-    }
-    .navbar {
-    padding:2px 48px
-    }
-    
-    #home {
-    display:flex;
-    flex-direction:column;
-    margin-right: 0;
-    margin-top: 12px;
-    max-width: 1200px;
-    text-align: right;
-    align-items: end;
-    }
-    
-    
+  .active_box{
+    opacity: 1;
+    left: 0px;
+    pointer-events: fill;
+  }
+  .menu_icon_box{
+    display: block;
+    z-index: 2;
+    width: fit-content;
+    height: auto;
+    margin: 20px;
+    position: absolute;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .line1 , .line2 , .line3{
+    width: 20px;
+    height: 3px;
+    margin: 4px 0px;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: 0.2s;
+  }
+  .active .line1{
+    transform: translate(0px , 15px)rotate(45deg);
+  }
+  .active .line2{
+    opacity: 0;
+  }
+  .active .line3{
+    transform: translate(0px , 1px)rotate(-45deg);
+  }
+  .imglogo-m{
+      position: absolute;
+      display: block;
+      z-index: 999;
+      left: 1.9rem;
+      top: 0.6rem;
+  }
+  .imglogo-m img{
+      width: 100%;
+      max-width: 70px;
+      margin: auto;
+      padding: 0px;
+  }
+  .menu-links{
+    position: absolute;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 380px;
+  height:230px
+  }
+  .menu-links ul{
+      display: block;
+      margin-right: 10px;
+  }
+  .menu-links a {
+  padding:.25rem 2rem
+  }
+  .menu-linksbtn{
+      display: flex;
+  }
+  .menusocial ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 230;
+      justify-content: center;
+      margin: auto;
+  }
+  .menusocial ul li:last-child{
+      margin-top: -1px;
+      margin-left: -40;
+  }
+  .menusocial li:first-child{
+      padding: 5px 8px;
+      gap: 0px;
+      width: 160px;
+      margin-bottom: 10px;
+  }
+  .menusocial a:first-child{
+      font-size: 14px;
+  }
+  
+  .menu-links.active{
+      margin: auto;
+      margin-top: 70px;
+  display:flex;
+  }
+  .menusocial.active {
+      display:flex
+  }
+  .navbar {
+  padding:0px 0px;
+  }
+  
+  #home {
+  display:flex;
+  flex-direction:column;
+  max-width: 1200px;
+  }   
 }
 
 .videocontainer{
@@ -202,13 +284,16 @@ video{
     display: block;
     position: absolute;
     width:100%;
+    max-width: 900px;
     margin: auto;
+    padding: 0 50px 0 50px;
     justify-content: center;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .videop p{
-    color: #FFF;
+    color: #000; /*#fff*/
     text-align: center;
     font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 100.033px;
@@ -275,8 +360,9 @@ video{
 }
 .services{
     width: 100%;
-    max-width: 1160px;
+    max-width: 1260px;
     margin: auto;
+    padding: 0 50px 0 50px;
 }
 .servicesgrid{
     display: flex;
@@ -319,18 +405,6 @@ video{
 .servicesgrid div:hover h2, .servicesprincipal:hover h2{
     color: #4EBEAE;
     transition: 0.7s;
-}
-
-.servicesgrid div::before{
-    content: "";
-    background-color: rgba(0, 0, 0, 0.13);
-    border-radius: 32px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    color: #FFF;
 }
 .servicecard1{
     position: relative;
@@ -399,6 +473,18 @@ video{
     font-size: 24px;
     max-width: 896px;
 }
+/*
+.servicesgrid div::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.13);
+    border-radius: 32px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    color: #FFF;
+}
 .servicesprincipal::before{
     content: "";
     background-color: rgba(0, 0, 0, 0.267);
@@ -408,7 +494,7 @@ video{
     right: 0px;
     bottom: 0px;
     left: 0px;
-}
+}*/
 .growthcontainer{
     background: #000;
     width: 100%;
@@ -421,8 +507,9 @@ video{
     flex-direction: column;
     position: relative;
     width: 100%;
-    max-width: 940px;
+    max-width: 1040px;
     margin: auto;
+    padding: 0 50px 0 50px;
 }
 .growth p{
     width: 878px;
@@ -440,7 +527,7 @@ video{
     position: absolute;
     width: 250px;
     top: 38;
-    right: 90;
+    right: 135;
     transform: rotate(5px);
 }
 .imglogo{
@@ -729,8 +816,9 @@ footer{
     position: relative;
     display: flex;
     width: 100%;
-    max-width: 1220px;
+    max-width: 1320px;
     margin: auto;
+    padding: 0 50px 0 50px;
     justify-content: space-between;
     align-items: center;
 }
@@ -745,14 +833,22 @@ footer{
     position: absolute;
 }
 .footerinfo ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     list-style: none;
     position: absolute;
     bottom: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8.445px;
 }
-.footerinfo ul li span{
+.footerinfo ul li{
+    display: flex;
+align-items: center;
+gap: 8.445px;
+}
+.footerinfo ul li p{
+    display: block;
     margin-top: 14px;
     font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 14px;
@@ -763,7 +859,7 @@ footer{
 }
 
 .form{
-    position: absolute;
+    position: relative;
     display: block;
     right: 0;
     width: 660px;

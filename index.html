@@ -3,11 +3,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Urbanist:wght@400;500;600;800;900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Melanie's - Business Consulting</title>
+  <link rel="icon" type="image/x-icon" href="./assets/logo-vid.png">
   <meta name="author" content="Flavia Sigoli"/>
   <meta http-equiv="content-language" content="en-US" />
   <meta name="copyright" content="Copyright © 2023 Melanie`s, Business Consulting" />
@@ -20,12 +20,12 @@
     <header> 
         <div id="home">
             <nav class="navbar">
-                <a class="btn-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </a>
-                <div class="menu-links">
+              <div class="btn-toggle menu_icon_box">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+              </div>
+                <div class="menu-links box">
                   <div class="menu-linksbtn">
                     <ul>
                       <li><a href="#"> Home </a></li>
@@ -83,7 +83,9 @@
             <div class="video"><video loop autoplay muted>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/R_InO9bxuwU?si=yLids56qqWHxgkPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </video></div>
-            <div class="videop"><p>Be ready for <br> your success<span style="color:#4EBEAE;">.</span></span></p></div>
+            <div class="videop">
+              <img src="./assets/logo-vid.png" alt="" draggable="false">
+              <p>Be ready for <br> your success<span style="color:#4EBEAE;">.</span></span></p></div>
         </div>
         <div class="aboutcontainer">
             <div class="about" id="about">
@@ -376,19 +378,19 @@
           </h2>
           <div class="teamgrid">
             <div class="teamgridcard">
-              <img src="./assets/team-1.jpg" alt="">
+              <img src="./assets/team-1.jpg" alt="" draggable="false">
               <h3>Juliana Souza</h3>
               <p>CEO / Owner</p>
               <a href="#">LINKEDIN</a>
             </div>
             <div class="teamgridcard">
-              <img src="./assets/team-2.jpg" alt="">
+              <img src="./assets/team-2.jpg" alt="" draggable="false">
               <h3>Janinne Telez</h3>
               <p>Lorem Ipsum</p>
               <a href="#">LINKEDIN</a>
             </div>
             <div class="teamgridcard">
-              <img src="./assets/team-3.jpg" alt="">
+              <img src="./assets/team-3.jpg" alt="" draggable="false">
               <h3>Lucas Moraes</h3>
               <p>Creative Director</p>
               <a href="#">LINKEDIN</a>
@@ -398,7 +400,7 @@
         <div class="contact" id="contact">
           <div class="contactinfo">
             <h6>Would you like to join our team?</h6>
-            <a href="https://www.figma.com/file/AXVRTDi50RS3NzoP1yx3If?node-id=17:1965&mode=dev#592607545" target="_blank">Apply here</a>
+            <a href="https://www.figma.com/file/AXVRTDi50RS3NzoP1yx3If?node-id=17:1965&mode=dev#592607545" target="_blank" draggable="false">Apply here</a>
           </div>            
         </div>      
     </main>
@@ -419,7 +421,7 @@
                 <circle cx="15" cy="15" r="15" fill="#4EBEAE"/>
                 <path d="M24.4835 14.0883L16.3554 7.30106C16.1237 7.1077 15.8173 7 15.4988 7C15.1803 7 14.8739 7.1077 14.6421 7.30106L6.51902 14.0872C6.27846 14.2872 6.11139 14.5466 6.03951 14.8318C5.96763 15.1169 5.99425 15.4146 6.11592 15.6862C6.2376 15.9578 6.4487 16.1908 6.72182 16.3548C6.99495 16.5189 7.31748 16.6065 7.64756 16.6062H8.26228V21.1875C8.26291 21.6681 8.47885 22.1287 8.86272 22.4685C9.24659 22.8083 9.76705 22.9994 10.3099 23H12.8444C13.1753 22.9997 13.4925 22.8831 13.7265 22.676C13.9604 22.4689 14.092 22.1881 14.0924 21.8952V18.9371C14.0925 18.8548 14.1295 18.7758 14.1953 18.7176C14.2611 18.6594 14.3503 18.6266 14.4433 18.6265H16.5581C16.6511 18.6266 16.7402 18.6594 16.806 18.7176C16.8718 18.7759 16.9087 18.8548 16.9088 18.9371V21.8952C16.9092 22.1881 17.0408 22.4689 17.2748 22.6761C17.5088 22.8832 17.8261 22.9997 18.157 23H20.6875C21.2303 22.9994 21.7508 22.8083 22.1346 22.4685C22.5185 22.1287 22.7344 21.668 22.7349 21.1875V16.6062H23.3536C23.6834 16.6061 24.0055 16.5184 24.2783 16.3545C24.5511 16.1905 24.762 15.9578 24.8837 15.6866C25.0054 15.4153 25.0323 15.118 24.961 14.833C24.8896 14.5481 24.7233 14.2887 24.4835 14.0883ZM21.8866 15.1044C21.7752 15.1044 21.6649 15.1238 21.5619 15.1615C21.459 15.1993 21.3655 15.2546 21.2867 15.3243C21.2079 15.3941 21.1454 15.4768 21.1028 15.5679C21.0602 15.6591 21.0382 15.7567 21.0382 15.8553V21.1875C21.0382 21.2699 21.0012 21.3488 20.9354 21.4071C20.8697 21.4653 20.7805 21.4981 20.6875 21.4982H18.6055V18.9371C18.6049 18.4566 18.389 17.996 18.0052 17.6562C17.6214 17.3164 17.1009 17.1252 16.5581 17.1247H14.4433C13.9004 17.1252 13.38 17.3164 12.9961 17.6562C12.6122 17.9959 12.3963 18.4566 12.3957 18.9371V21.4982H10.3099C10.2169 21.4981 10.1277 21.4653 10.0619 21.4071C9.99609 21.3489 9.95908 21.2699 9.95899 21.1875V15.8553C9.95899 15.7567 9.93706 15.6591 9.89443 15.5679C9.85179 15.4768 9.78931 15.3941 9.71053 15.3243C9.63175 15.2546 9.53822 15.1993 9.43529 15.1615C9.33236 15.1238 9.22204 15.1044 9.11064 15.1044H7.77349L15.4988 8.65036L23.2279 15.1044H21.8866Z" fill="black"/>
                 </svg>                
-                <span>Dublin, OH / Seattle, WA / Brazil, SP</span>
+                <p>Dublin, OH / Seattle, WA / Brazil, SP</p>
             </li>
             <li>
               <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -432,7 +434,7 @@
                 </clipPath>
                 </defs>
                 </svg>
-                <span>melaniesbusinessconsulting@gmail.com</span>
+                <p>melaniesbusinessconsulting@gmail.com</p>
               </li>
             <li>
               <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -447,14 +449,14 @@
                 </clipPath>
                 </defs>
                 </svg>
-                <span>(740) 705-2728</span>
+                <p>(740) 705-2728</p>
             </li>
             <li>
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="15" cy="15" r="15" fill="#4EBEAE"/>
               <path d="M15.0914 6C12.6225 6 12.3127 6.01123 11.343 6.05712C10.3752 6.10321 9.71466 6.26256 9.13665 6.49636C8.53875 6.73785 8.03157 7.06088 7.52628 7.58659C7.02061 8.11211 6.71002 8.63959 6.47707 9.26123C6.2517 9.86258 6.09829 10.5498 6.05473 11.5559C6.01136 12.5644 6 12.8868 6 15.4545C6 18.0222 6.01098 18.3435 6.05492 19.352C6.09943 20.3585 6.25264 21.0455 6.47726 21.6467C6.70964 22.2685 7.02023 22.796 7.52571 23.3215C8.03081 23.8474 8.53799 24.1712 9.13551 24.4127C9.7139 24.6465 10.3747 24.8059 11.3423 24.852C12.3119 24.8979 12.6216 24.9091 15.0903 24.9091C17.5593 24.9091 17.8682 24.8979 18.8379 24.852C19.8056 24.8059 20.467 24.6465 21.0454 24.4127C21.6431 24.1712 22.1495 23.8474 22.6546 23.3215C23.1603 22.796 23.4709 22.2685 23.7038 21.6469C23.9273 21.0455 24.0807 20.3583 24.1262 19.3522C24.1697 18.3437 24.1811 18.0222 24.1811 15.4545C24.1811 12.8868 24.1697 12.5646 24.1262 11.5561C24.0807 10.5496 23.9273 9.86258 23.7038 9.26142C23.4709 8.63959 23.1603 8.11211 22.6546 7.58659C22.1489 7.06068 21.6433 6.73765 21.0448 6.49636C20.4653 6.26256 19.8043 6.10321 18.8365 6.05712C17.8669 6.01123 17.5582 6 15.0885 6H15.0914ZM14.2759 7.70379C14.5179 7.70339 14.788 7.70379 15.0914 7.70379C17.5186 7.70379 17.8063 7.71285 18.7648 7.75815C19.6511 7.8003 20.1321 7.95433 20.4526 8.08374C20.8768 8.25511 21.1793 8.45995 21.4973 8.79086C21.8154 9.12177 22.0124 9.43692 22.1775 9.87814C22.302 10.211 22.4503 10.7113 22.4906 11.6331C22.5342 12.6298 22.5436 12.9292 22.5436 15.4524C22.5436 17.9756 22.5342 18.275 22.4906 19.2716C22.4501 20.1934 22.302 20.6937 22.1775 21.0266C22.0128 21.4678 21.8154 21.782 21.4973 22.1127C21.1791 22.4436 20.877 22.6485 20.4526 22.8198C20.1325 22.9498 19.6511 23.1035 18.7648 23.1456C17.8065 23.1909 17.5186 23.2008 15.0914 23.2008C12.664 23.2008 12.3763 23.1909 11.418 23.1456C10.5317 23.1031 10.0506 22.949 9.73 22.8196C9.30577 22.6483 9.00275 22.4434 8.68458 22.1125C8.36641 21.7816 8.16944 21.4672 8.0043 21.0258C7.87987 20.693 7.73158 20.1927 7.69124 19.2708C7.64768 18.2742 7.63897 17.9748 7.63897 15.45C7.63897 12.9253 7.64768 12.6274 7.69124 11.6308C7.73177 10.709 7.87987 10.2087 8.0043 9.87538C8.16906 9.43417 8.36641 9.11901 8.68458 8.78811C9.00275 8.4572 9.30577 8.25235 9.73 8.08059C10.0504 7.95059 10.5317 7.79695 11.418 7.75461C12.2566 7.71521 12.5816 7.70339 14.2759 7.70142V7.70379ZM19.9439 9.27364C19.3416 9.27364 18.853 9.78123 18.853 10.4078C18.853 11.0342 19.3416 11.5423 19.9439 11.5423C20.5462 11.5423 21.0348 11.0342 21.0348 10.4078C21.0348 9.78142 20.5462 9.27324 19.9439 9.27324V9.27364ZM15.0914 10.5992C12.5132 10.5992 10.423 12.7732 10.423 15.4545C10.423 18.1359 12.5132 20.3089 15.0914 20.3089C17.6695 20.3089 19.7591 18.1359 19.7591 15.4545C19.7591 12.7732 17.6693 10.5992 15.0912 10.5992H15.0914ZM15.0914 12.303C16.7648 12.303 18.1216 13.7139 18.1216 15.4545C18.1216 17.195 16.7648 18.6061 15.0914 18.6061C13.4178 18.6061 12.0612 17.195 12.0612 15.4545C12.0612 13.7139 13.4178 12.303 15.0914 12.303Z" fill="black"/>
               </svg>
-              <span>@loremipsum</span>
+              <p>@loremipsum</p>
             </li>
           </ul>
         </div>
