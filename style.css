@@ -528,7 +528,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover; 
     border-radius: 20px;
-    width: 1162px;
+    max-width:1162px;
     height: 410px;
     padding:30px;
     color: #FFF;
@@ -978,8 +978,9 @@ swiper-container:host{
     text-decoration: none;
     color: #22837A; 
     width: 275px;
+    height: 66px;
     display: inline-flex;
-    padding: 24px 40px;
+    padding: 24px 30px;
     border: 1px solid #4EBEAE;
     border-radius: 40px;
     align-items: center;
@@ -1004,13 +1005,14 @@ footer{
     color: #FFF;
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1300px;
     border-top: #4EBEAE 3px solid;
     padding-top: 50px;
     margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 50 0 50;
 }
 .footertitle svg{
     margin-top: 40px;
@@ -1047,18 +1049,19 @@ footer{
 }
 .footerinfo ul li{
     display: flex;
-align-items: center;
-gap: 8.445px;
+    align-items: center;
+    gap: 8.45px;
 }
 .footerinfo ul li p{
     display: block;
-    margin-top: 14px;
+    margin-top: 4px;
     font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 14px;
     font-style: normal;
     opacity: 0.5;
     justify-content: center;
     align-items: center;
+    padding-bottom: 8px;
 }
 
 .form{
