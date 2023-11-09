@@ -55,10 +55,9 @@ header {
     top: 0;
     z-index: 99;
     width: 100%;
-    max-width: 1240px;
+    max-width: 1400px;
     margin: auto;
-    height: 50px;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 50px 5px 0px;
 } 
 .menu-links{
     color:#fff;
@@ -292,7 +291,6 @@ header {
 }
 
 .videocontainer{
-    margin-top: 80px;
     position: relative;
     display:flex;
     flex-direction: column;
@@ -306,7 +304,7 @@ header {
     width:100%;
     margin: 0 auto;
 }
-video{
+.videocontainer img{
     margin: 0;
     width: 100%;
     height: 100%;
@@ -324,18 +322,51 @@ video{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.videop img{
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
 .videop p{
-    color: #000; /*#fff*/
-    max-width: 605px;
+    color: #fff;
+    width: 605px;
+    height: auto;
+    margin: auto;
     text-align: center;
     font-family: 'Urbanist';
     font-size: 100.033px;
     font-style: normal;
     font-weight: 300;
     line-height: 100%; /* 100.033px */
+    top: 50%;
 }
-@media screen and (max-width:1000px) {
-
+@media screen and (max-width:1200px) {
+    .videop img{
+        max-width: 280px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .videop p{
+        width: 100%;
+        max-width: 605px;
+        height: auto;
+        margin: auto;
+        font-size: 80.033px;
+        top: 50%;
+    }
+}
+@media screen and (max-width:600px) {
+    .videop img{
+        max-width: 150px;
+    }
+    .videop p{
+        width: 100%;
+        max-width: 605px;
+        font-size: 35.033px;
+        line-height: 90%; /* 100.033px */
+    }
 }
 
 .aboutcontainer{
@@ -701,7 +732,7 @@ swiper-container:host{
     --swiper-theme-color: #fff;
 }
 .mySwiper3{display: none;}
-@media screen and (max-width:1000px) {
+@media screen and (max-width:900px) {
     .mySwiper{display: none;}
     .mySwiper3 {
         display: block;
@@ -716,14 +747,58 @@ swiper-container:host{
         height: fit-content;
     }
     .swipercontent{
-        max-width: 306px;
-        height: 203.673px;
+        max-width: 386px;
+        height: 223.673px;
         margin-bottom: 60px;
         padding: auto;
         padding-top: 18px;
     }
     .swipercontent h2{
-        font-size: 20px;
+        font-size: 24px;
+        font-weight: 500;
+        font-weight: 700;
+        
+    }
+    .swipercontent h6{
+        margin-top: 0px;
+        line-height: 158%; 
+        color: #22837A;
+        font-family: 'Calibri';
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .swipercontent svg{
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        left: 50%;
+        top: 37%;
+        transform: translate(-49%, -50%);
+    }
+    swiper-slide p{
+        width: 360px;
+        margin: auto;
+        color: #000;
+        font-family: 'Outfit', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 120%; /* 18.2px */
+    }
+    :root {
+        --swiper-pagination-bullet-width: 8px;
+        --swiper-pagination-bullet-height: 8px;
+    }
+}
+@media screen and (max-width:700px) {
+    .swipercontent{
+        max-width: 310px;
+        height: 203.673px;
+        margin-bottom: 60px;
+        padding: auto;
+        padding-top: 8px;
+    }
+    .swipercontent h2{
+        font-size: 18px;
         font-weight: 500;
         font-weight: 700;
         
@@ -741,17 +816,26 @@ swiper-container:host{
         justify-content: center;
         text-align: center;
         left: 50%;
-        top: 35%;
+        top: 30%;
         transform: translate(-49%, -50%);
     }
     swiper-slide p{
-        width: 290px;
+        max-width: 300px;
         margin: auto;
         color: #000;
         font-family: 'Outfit', sans-serif;
         font-size: 12px;
         font-weight: 400;
         line-height: 120%; /* 18.2px */
+    }
+    swiper-slide #sixave p{
+        max-width: 300px;
+        margin: auto;
+        color: #000;
+        font-family: 'Outfit', sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 120%; /* 18.2px */        
     }
     :root {
         --swiper-pagination-bullet-width: 8px;
