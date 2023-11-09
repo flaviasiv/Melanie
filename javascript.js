@@ -13,3 +13,30 @@ document.onclick = function(e){
         box.classList.remove("active_box");
     }
 }
+
+//swiper responsive
+
+const swiperEl = document.querySelector('.mySwiper2')
+Object.assign(swiperEl, {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 0,
+  pagination: {
+    clickable: true,
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 5,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 50,
+    },
+  },
+});
+swiperEl.initialize();
