@@ -658,11 +658,16 @@ header {
     width: 100%;
     max-width: 3900px;
     margin: auto;
+    padding: 0 200 0 200;
     background-color: #22837A;
     overflow: hidden;
     scroll-behavior: smooth;
     cursor: grab;
     height: fit-content;
+}
+@media screen and (max-width:1650px) {
+    .mySwiper{
+        padding: 0 100 0 100;}
 }
 swiper-slide {
   text-align: center;
@@ -696,8 +701,7 @@ swiper-slide {
     font-style: normal;
     font-weight: 600;
     color: #22837A;
-    font-weight: 800;
-    
+    font-weight: 800;    
 }
 .swipercontent h6{
     margin-top: 0px;
@@ -1008,11 +1012,11 @@ footer{
     max-width: 1300px;
     border-top: #4EBEAE 3px solid;
     padding-top: 50px;
+    margin: 0 50 0 50;
     margin: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 50 0 50;
 }
 .footertitle svg{
     margin-top: 40px;

@@ -19,8 +19,8 @@ document.onclick = function(e){
 const swiperEl = document.querySelector('.mySwiper2')
 Object.assign(swiperEl, {
   slidesPerView: 1,
-  loop: true,
   spaceBetween: 0,
+  loop: true,
   pagination: {
     clickable: true,
   },
