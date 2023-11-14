@@ -365,43 +365,160 @@ header {
         font-size: 35.033px;
         line-height: 90%; /* 100.033px */
     }
-    .videop p span{text-decoration:none 4px}
-    .videop p svg{display: block;}
+    .videop p span{text-decoration:none}
+    .videop p svg{
+        display: block;
+        position: absolute;
+        margin: auto;
+        margin-left: 5;
+        margin-top: 2;
+    }
 }
 
 .aboutcontainer{
+    position: relative;
     width: 100%;
     max-width: 3290px;
     margin: auto;
-    color: #FFF;
-    background: linear-gradient(90deg, rgba(0, 16, 11, 0.00) 45.83%, #000403 65.63%), url(<path-to-image>), lightgray -202px -28.903px / 80.994% 103.87% no-repeat;
 }
-.aboutimg img{
-    width: 100%;
+.aboutcontainer img{
     object-fit: cover;
+    width: 100%;
+    max-width: 3290px;
+    margin: auto;
 }
-/*.abouttext{
+.about{
+    position: relative;
+    display: inline;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+.abouttext{
     position: absolute;
-    display:inline-block;
-    float:right;
-    padding-right: 50px
+    z-index: 99;
+    display: flex;
+    flex-direction: column;    
+    width: 450px;
+    top: 50%;
+    transform: translateY(-135%);
+    right: 100;
+    margin-right: 0;
+    color: var(--off-white, #FFF);
+    font-family: 'Urbanist';
 }
-.abouttext p span{
-    text-align: center;
-    font-family: Urbanist;
+.abouttext h2{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
     font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 100%; 
+    font-weight: 600;
+}
+.abouttext h2 svg{
+    margin-top: 16px;
 }
 .abouttext p{
-    width: 400px;
-    font-family: Urbanist;
-    font-size: 16px;
+    width: 431.135px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 160%; 
-}*/
+    line-height: 160%;
+}
+.abouttext h6{
+    width: 431.135px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight:700;
+    line-height: 160%;
+    letter-spacing: 0.7;
+    border: 1px solid #9BEBEC;
+    border-radius: 8px;
+    margin: 20 0 20 -8;
+    padding: 10;
+}
+.abouttext span{
+    max-width: 350;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -0.5px;
+}
+@media screen and (max-width:1600px) {
+    .abouttext{   
+        width: 350px;
+        transform: translateY(-110%);
+    } 
+}   
+@media screen and (max-width:1340px) {
+    .abouttext{   
+        width: 350px;
+        transform: translateY(-100%);
+    }    
+    .abouttext h2{
+        font-size: 30px;
+    }
+    .abouttext p{
+        width: 430.135px;
+        font-size: 14px;
+    }
+    .abouttext p span{
+        font-size: 14;
+    }
+    .abouttext h6{
+        width: 421.135px;
+        font-weight:600;
+    }
+    .abouttext span{
+        font-size: 18px;
+        letter-spacing: -0.5px;
+    }
+}
+@media screen and (max-width:1040px) {
+    .abouttext{   
+        width: 450px;
+        top: 50%;
+        transform: translateY(-100%);
+        right: 10;
+    }
+    .abouttext h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .abouttext h2 svg{
+        margin-top: 14px;
+    }
+    .abouttext p{
+        width: 401.135px;
+        line-height: 115%;
+    }
+    .abouttext p span{
+        font-size: 14;
+    }
+    .abouttext h6{
+        font-size: 14px;
+        font-style: normal;
+        font-weight:700;
+        line-height: 160%;
+        letter-spacing: 0.7;
+        border: 1px solid #9BEBEC;
+        border-radius: 8px;
+        margin: 16 0 16 -8;
+        padding: 10;
+    }
+    .abouttext span{
+        max-width: 350;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 1px;
+    }
+}
+@media screen and (max-width:880px) {
+
+    /*mobile version*/
+
+}
+
 .servicescontainer{
     background-color: #fff;
     width: 100%;
@@ -585,6 +702,7 @@ header {
         font-weight: 400;
         letter-spacing: 0.1;
     }*/
+    .servicescontainer{display: none;}
     
 }
 /*
