@@ -1010,7 +1010,6 @@ footer{
     display: flex;
     flex-direction: column;
     max-width: 1300px;
-    border-top: #4EBEAE 3px solid;
     padding-top: 50px;
     margin: 0 50 0 50;
     margin: auto;
