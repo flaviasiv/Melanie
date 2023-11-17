@@ -358,7 +358,7 @@ header {
     .videop p{
         width: 100%;
         max-width: 605px;
-        font-size: 35.033px;
+        font-size: 20px;
         line-height: 90%; /* 100.033px */
     }
     .videop p span{text-decoration:none}
@@ -366,12 +366,14 @@ header {
         display: block;
         position: absolute;
         margin: auto;
-        margin-left: 5;
+        margin-left: 14%;
         margin-top: 2;
+        max-width: 70;
     }
 }
 
 .aboutcontainer{
+    position: relative;
     width: 100%;
     max-width: 3290px;
     margin: auto;
@@ -498,29 +500,27 @@ header {
 }
 @media screen and (max-width:980px) {
     /*mobile version*/
-    .aboutimgmob{
+    .aboutcontainer img{
         display: block;
         width: 100%;
-        max-width: 500px;
         margin: auto;
         object-fit: cover;
     }
 .aboutcontainer{
-    position: relative;
-    width: 100%;
-    max-width: 3290px;
+    background-image: url(./assets/about-bg-m.png);
+    max-height: 2900;
+    object-fit:cover;
     margin: auto;
-    max-height: 1100px;
 }
 .about{
-    position: absolute;
-    z-index: 99;
+    position: relative;
     width: 100%;
-    max-width: 1440px;
+    max-width: 440px;
     margin: auto;
     display: block;
+    text-align: center;
     flex-direction: column;  
-    padding:20 20 0 20;
+    padding:10 15 0 15;
     color: var(--off-white, #FFF);
     font-family: 'Urbanist';
 }
@@ -528,53 +528,57 @@ header {
     display: flex;
     flex-direction: column;    
     justify-content: center;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 600;
+    margin-bottom: 180;
 }
 .about h2 svg{
-  display: none;
+    display: flex;
+    margin-top: 14px;
+    left: 50%;
+    transform: translateX(185%);
 }
 .abouttext{  
-    text-align: center;
-}
+    float: left;}
 .abouttext p{
-    max-width: 351.135px;
+    width: 361.135px;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 160%;
-    margin-top: 200;
+    line-height: 130%;
 }
 .abouttext p span{
     font-size: 14px;
 }
 .abouttext h6{
-    width: 431.135px;
-    font-size: 14px;
+    display: block;
+    max-width: 361.135px;
+    
+    font-size: 13px;
     font-style: normal;
-    font-weight:700;
-    line-height: 160%;
+    font-weight:600;
+    line-height: 120%;
     letter-spacing: 0.7;
     border: 1px solid #9BEBEC;
     border-radius: 8px;
-    margin: 20 0 20 -8;
+    margin: 10 0 10 0;
     padding: 10;
 }
 .abouttext span{
-    max-width: 380;
-    font-size: 20px;
+    max-width: 350;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
     letter-spacing: -0.5px;
 }
-
 }
 
 .servicescontainer{
     background-color: #fff;
     width: 100%;
     max-width: 3290px;
+    height: auto;
     margin: auto;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -739,25 +743,169 @@ header {
     top: 50%;
     transform: translateY(25%);
 }
+.myswiper4 {display: none;}
 @media screen and (max-width:900px) {
-    /*.servicesgrid div h2, .servicesprincipal h2{
-        position: absolute;
-        color: #FFF;
-        font-family: 'Urbanist', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0.1;
-    }
-    .servicesgrid div ul, .servicesprincipal ul{
-        position: absolute;
-        color: #FFF;
-        font-family: 'Urbanist', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0.1;
-    }*/    
+    .servicesgrid, .servicesprincipal{display: none;}
+    .mySwiper4 {display: block;
+    height: 600px;
+}
+.mySwiper4 swiper-slide{
+    background-color: #FFF;
+}
+.servicescontainer{
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    max-width: 3290px;
+    height: 800;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.servicescontainer .servicestitle h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+.servicestitle h2 svg{
+    margin-top: 16px;
+}
+.servicestitle p{
+    display: block;
+    width: 431.135px;
+    color: var(--pure-black, #000);
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 158%; /* 31.6px */
+    letter-spacing: -0.5px;
+}
+.swiper4card, .servicecard2{
+    border-radius: 20px;
+    width: 546px;
+    height: 603px;
+    padding:30px;
+}
+.swiper4card, .servicecard4{
+    border-radius: 20px;
+    width: 546px;
+    height: 453px;
+    padding:30px;
+
+}
+.swiper4card ul, .servicesprincipal ul {
+    position: absolute;
+    list-style-position: inside;
+    font-family: 'Urbanist', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 158%;
+    max-width: 481px;     
+    letter-spacing: -0.5px;
+}
+.swiper4card div svg, .servicesprincipal svg{
+    z-index: 1;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+.swiper4card div:hover > svg, .servicesprincipal:hover > svg{
+    color: #9BEBEC;
+    transition: 0.7s;
+}
+.swiper4card div h2, .servicesprincipal h2{
+    position: absolute;
+    color: #FFF;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+}
+.swiper4card div:hover h2, .servicesprincipalswipe:hover h2{
+    color: #9BEBEC;
+    transition: 0.7s;
+}
+.swiper4card{
+    position: relative;
+    background-image: url(./assets/Frame263.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-right: 24px;
+}
+.servicecard1 ul{
+    position:absolute;
+    bottom: 40;
+    font-size: 16px;
+}
+.swiper4card{
+    position: relative;
+    background-image: url(./assets/Frame264.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.swiper4card ul{
+    position:absolute;
+    bottom: 40;
+    font-size: 16px;
+}
+.swiper4card{
+    position: relative;
+    background-image: url(./assets/Frame265.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: lightgray 50%;
+    margin-right: 24px;
+}
+.swiper4card ul{
+    position:absolute;
+    top: 50%;
+    transform: translateY(0%);
+    font-size: 16px;
+}
+.swiper4card{
+    position: relative;
+    background-image: url(./assets/Frame266.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.swiper4card ul{
+    position:absolute;
+    top: 50%;
+    transform: translateY(0%);
+    font-size: 16px;
+}
+.servicesprincipalswipe {
+    position: relative;
+    background-image: url(./assets/Frame268.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 20px;
+    max-width:1162px;
+    height: 370px;
+    padding:0px;
+    color: #FFF;
+    margin-top: 25px;
+}
+.servicesprincipalswipe ul{
+    position:absolute;
+    bottom: 20;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 150%;
+    max-width: 896px;
+    top: 50%;
+    transform: translateY(25%);
+}
 }
 /*
 .servicesgrid div::before{
