@@ -357,7 +357,7 @@ header {
     }
     .videop p{
         width: 100%;
-        max-width: 605px;
+        max-width: 150px;
         font-size: 20px;
         line-height: 90%; /* 100.033px */
     }
@@ -366,7 +366,7 @@ header {
         display: block;
         position: absolute;
         margin: auto;
-        margin-left: 14%;
+        margin-left: 15%;
         margin-top: 2;
         max-width: 70;
     }
@@ -753,6 +753,7 @@ header {
     background-color: #FFF;
     text-align: left;
     padding: 0;
+    cursor: grab;
 }
 .servicescontainer{
     position: relative;
@@ -797,7 +798,7 @@ header {
     border-radius: 20px;
     width: 359px;
     height: 470px;
-    padding:24px;
+    padding:18px;
 }
 .swiper4card ul {
     position: absolute;
@@ -1034,7 +1035,7 @@ header {
 }
 
 :root {
-    --swiper-navigation-color: #fff;
+    --swiper-navigation-color: #eeebeb;
     --swiper-pagination-color: #333333cc;
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
@@ -1371,11 +1372,12 @@ swiper-container:host{
         max-width: 1116px;
         margin: auto;
         color: #FFF;
-        margin-bottom: 100px;
+        margin-bottom: 20px;
         text-align: left;
     }
     .teamgridcard{
         margin: auto;
+        margin-bottom: 80px;
     }
     .teamgridcard h3{
         margin-top: 22px;
@@ -1452,11 +1454,6 @@ swiper-container:host{
     margin-right: 80px;
     justify-content: center;
 }
-@media screen and (max-width:1100px) {
-    .contact svg{
-        display: none;
-    }
-}
 .contactvetor{
     width: 100%;
     max-width: 2990px;
@@ -1468,6 +1465,44 @@ swiper-container:host{
     max-width: 1250px;
     margin: auto;
     border: 1px solid #9BEBEC;
+}
+@media screen and (max-width:1100px) {
+    .contact svg{
+        display: none;
+    }
+    .contact{
+        padding-bottom: 42px;
+    }
+    .contactinfo{
+        flex-direction: column;
+        width: 701px;
+    }
+    .contactinfo h6{
+        max-width: 238px;
+        margin: auto;
+        font-size:32px;
+    }
+    .contactinfo a{
+        font-size: 28px;
+        margin-right: 0px;
+        max-width: 238px;
+        margin: auto;
+        margin-top: 16px;
+    }
+    .border{
+        max-width: 650px;
+    }
+
+}
+@media screen and (max-width:700px) {
+    .contactinfo{
+        flex-direction: column;
+        width: 461px;
+    }
+    .border{
+        max-width: 350px;
+    }
+
 }
 footer{
     position: relative;
@@ -1595,7 +1630,6 @@ form {
     display: flex;
     gap: 20px;
 }
-
 .rights{
     position: relative;
     height: 91px;
@@ -1614,4 +1648,157 @@ form {
     font-size: 14.4px;
     font-weight: 500;
     line-height: 150%;
+}
+@media screen and (max-width:1000px) {
+    footer{
+        position: relative;
+        width: 100%;
+        max-width: 2990px;
+        margin: auto;
+        background-color: #010102;
+        color: #FFF;
+        height: auto;
+    }
+    .footertitle h2{
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+        margin: auto;
+        align-items: center;
+        font-family: 'Urbanist';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .footertitle svg{
+        margin-top: 16px;
+    }
+    .footergrid{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 520px;
+        margin: auto;
+        padding: 0 10px 0 10px;
+        justify-content:center;
+        align-items: center;
+    }
+    .footerinfo{
+        display: flex;
+        flex-direction: column;
+        width: 410px;
+        height: 650px;
+        margin: auto;
+        margin-left: 0px;
+    }
+    .footerinfo img{
+        top: 30;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 350;
+        position: absolute;
+    }
+    .footerinfo ul{
+        max-width: 260;
+        list-style: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8.445px;
+    }
+    .footerinfo ul li{
+        display: flex;
+        align-items: center;
+        gap: 8.45px;
+    }
+    .footerinfo ul li p{
+        display: block;
+        margin-top: 4px;
+        font-family: 'Urbanist';
+        font-size: 14px;
+        font-style: normal;
+        opacity: 0.5;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 8px;
+    }
+    
+    .form{
+        position: relative;
+        display: block;
+        right: 0;
+        top: 0;
+        left: 0;
+        width: 460px;
+        justify-content: right;
+        margin: auto;
+        height: 450px;
+        background-color: #010102;
+    }
+    form {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: right;
+        flex-direction: column;
+        gap: 17px;
+        background-color: #010102;
+    }
+    #form input, textarea{
+        width: 100%;
+        list-style: none;
+        border: 4px solid #fff;
+        border-radius: 16px;
+        padding: 10px;
+        background-color: #010102;
+    }
+    #form input{
+        height:  46px;    
+    }
+    #form button{
+        margin-top: 5px;
+        width: 110px;
+        border-radius: 5px;
+        list-style: none;
+        border: 2px solid #fff;
+        color: #9BEBEC;
+        border-radius: 16px;
+        padding: 8px;
+        margin: auto;
+        background-color: #010102;
+        cursor: pointer;
+    }
+    #form button:hover{
+        border: 2px solid #259395;
+        transition: 0.7s;
+    }
+    .formgroup1, .formgroup2{
+        display: flex;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:770px) {
+    
+    .form{
+        width: 360px;
+        margin: auto;
+        height: 400px;
+    }
+    .rights{
+        height: 60px;
+        padding: 24px 0;
+    }
+    .rights p{
+        font-size: 11px;
+    }
 }
