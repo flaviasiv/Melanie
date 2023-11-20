@@ -751,9 +751,12 @@ header {
 }
 .mySwiper4 swiper-slide{
     background-color: #FFF;
+    text-align: left;
+    padding: 0;
 }
 .servicescontainer{
     position: relative;
+    color: #fff;
     background-color: #fff;
     width: 100%;
     max-width: 3290px;
@@ -762,11 +765,11 @@ header {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+.services{padding: 0;}
 .servicescontainer .servicestitle h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000;
     text-align: center;
     font-family: 'Urbanist', sans-serif;
     font-size: 32px;
@@ -780,131 +783,95 @@ header {
 }
 .servicestitle p{
     display: block;
-    width: 431.135px;
+    width: 345px;
     color: var(--pure-black, #000);
     text-align: center;
     margin: auto;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 158%; /* 31.6px */
     letter-spacing: -0.5px;
 }
-.swiper4card, .servicecard2{
+.swiper4card{
     border-radius: 20px;
-    width: 546px;
-    height: 603px;
-    padding:30px;
+    width: 359px;
+    height: 470px;
+    padding:24px;
 }
-.swiper4card, .servicecard4{
-    border-radius: 20px;
-    width: 546px;
-    height: 453px;
-    padding:30px;
-
-}
-.swiper4card ul, .servicesprincipal ul {
+.swiper4card ul {
     position: absolute;
     list-style-position: inside;
+    text-align: left;
+    color: #FFF;
     font-family: 'Urbanist', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 158%;
-    max-width: 481px;     
+    max-width: 351px;     
+    padding: 0;
+    margin-left: 0;
     letter-spacing: -0.5px;
 }
-.swiper4card div svg, .servicesprincipal svg{
+.swiper4card svg{
     z-index: 1;
     margin-bottom: 10px;
     color: #FFF;
 }
-.swiper4card div:hover > svg, .servicesprincipal:hover > svg{
+.swiper4card:hover > svg{
     color: #9BEBEC;
     transition: 0.7s;
 }
-.swiper4card div h2, .servicesprincipal h2{
+.swiper4card h2{
     position: absolute;
     color: #FFF;
+    text-align: left;
     font-family: 'Urbanist', sans-serif;
-    font-size: 32px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 600;
+    max-width: 191px;
 }
-.swiper4card div:hover h2, .servicesprincipalswipe:hover h2{
+.swiper4card:hover h2{
     color: #9BEBEC;
     transition: 0.7s;
 }
-.swiper4card{
+.card1{
     position: relative;
     background-image: url(./assets/Frame263.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-    margin-right: 24px;
 }
-.servicecard1 ul{
+.swiper4card ul{
     position:absolute;
     bottom: 40;
-    font-size: 16px;
+    font-size: 12px;
 }
-.swiper4card{
+.card2{
     position: relative;
     background-image: url(./assets/Frame264.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
-.swiper4card ul{
-    position:absolute;
-    bottom: 40;
-    font-size: 16px;
-}
-.swiper4card{
+.card3{
     position: relative;
     background-image: url(./assets/Frame265.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-    background-color: lightgray 50%;
-    margin-right: 24px;
 }
-.swiper4card ul{
-    position:absolute;
-    top: 50%;
-    transform: translateY(0%);
-    font-size: 16px;
-}
-.swiper4card{
+.card4{
     position: relative;
     background-image: url(./assets/Frame266.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
-.swiper4card ul{
-    position:absolute;
-    top: 50%;
-    transform: translateY(0%);
-    font-size: 16px;
-}
-.servicesprincipalswipe {
+.prin {
     position: relative;
-    background-image: url(./assets/Frame268.jpg);
+    background-image: url(./assets/Frame268m.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-    border-radius: 20px;
-    max-width:1162px;
-    height: 370px;
-    padding:0px;
-    color: #FFF;
-    margin-top: 25px;
-}
-.servicesprincipalswipe ul{
-    position:absolute;
-    bottom: 20;
-    font-family: 'Urbanist', sans-serif;
-    font-size: 16px;
-    font-weight: 400px;
-    line-height: 150%;
-    max-width: 896px;
-    top: 50%;
-    transform: translateY(25%);
+    border-radius: 0px;
+    border-radius: 21px;
 }
 }
 /*
@@ -955,6 +922,7 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: 1;
+    font-family: 'Urbanist', sans-serif;
 }
 .vetor{
     display: flex;
@@ -980,6 +948,62 @@ header {
     left: 50%;
     transform: translateX(-50%);
 }
+@media screen and (max-width:1000px) {
+    .growthcontainer{
+        background: #000;
+        width: 100%;
+        max-width: 2990px;
+        margin: auto;
+        padding-top: 128px;
+    }
+    .growth{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        max-width: 343px;
+        margin: auto;
+        padding: 0
+    }
+    .growth p{
+        width: 342px;
+        max-height: 114px;
+        margin: auto;
+        color: #FFF;
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .vetor{
+        display: flex;
+        position: absolute;
+        width: 120px;
+        top: 49;
+        right: 158;
+        transform: rotate(15px);
+    }
+    .imglogo{
+        width: 314px;
+        height: 100%;
+        flex-shrink: 0;
+        margin: auto;
+        margin-top: 32;
+        margin-bottom: 235px;
+    }
+    .growth svg{
+        stroke: #FFF;
+        display: flex;
+        position: absolute;
+        width: 250px;
+        bottom: 51;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+
 .recenttext{
     display: flex;
     flex-direction: column;
@@ -1311,6 +1335,75 @@ swiper-container:host{
     text-decoration: none;
     color: #259395;
     opacity: 0.6;
+}
+@media screen and (max-width:990px) {
+    .teamcontainer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        max-width: 2990px;
+        margin: auto;
+        color: #FFF;
+        align-items: center;
+    }
+    .teamcontainer h2{
+        margin-top: 60px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-family: 'Urbanist';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .teamcontainer h2 svg{
+        margin-top: 16px;
+    }
+    .teamgrid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        width: 100%;
+        max-width: 1116px;
+        margin: auto;
+        color: #FFF;
+        margin-bottom: 100px;
+        text-align: left;
+    }
+    .teamgridcard{
+        margin: auto;
+    }
+    .teamgridcard h3{
+        margin-top: 22px;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    .teamgridcard p{
+        margin-top: 24px;
+        font-family: 'Urbanist', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 158%; 
+        opacity: 0.3;
+    }
+    .teamgridcard a{
+        color: var(--high-tiffany, #9BEBEC);
+        font-family: 'Urbanist';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        text-decoration: none;
+        color: #259395;
+        opacity: 0.6;
+    }
+    
 }
 .contact{
     display: flex;
