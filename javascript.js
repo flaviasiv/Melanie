@@ -85,7 +85,7 @@ window.addEventListener("scroll", reveal);
 
 //swiper arrows
 
-const swiper = new Swiper('.mySwiper4', {
+const swiper = new swiper('.mySwiper4', {
   loop: true,                         //loop
   autoplay: {                         //autoplay
       delay: 2000,  
