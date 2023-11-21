@@ -276,7 +276,7 @@ header {
   #home {
   display:flex;
   flex-direction:column;
-  max-width: 1200px;
+  max-width: 400px;
   text-align: right;
   align-items: end;
   }   
@@ -290,16 +290,10 @@ header {
     max-width:3900px;
     background-color:transparent;
 }
-.videocontainer .video{
-    position: relative;
-    display:flex;
-    width:100%;
-    margin: 0 auto;
-}
-.videocontainer img{
-    margin: 0;
+.videoimg {
+    display: block;
     width: 100%;
-    height: 100%;
+    object-fit: cover;
 }
 .videop{
     display: flex;
@@ -352,13 +346,26 @@ header {
     }
 }
 @media screen and (max-width:600px) {
+    .videoimg{
+        width: 100%;
+        height: 500px;
+        object-position: bottom;
+    }
+    .videop{
+        flex-direction: column;
+        padding: 0;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .videop img{
-        max-width: 150px;
+        max-width: 180px;
+        margin-bottom: 40px;
     }
     .videop p{
         width: 100%;
-        max-width: 150px;
-        font-size: 20px;
+        max-width: 317px;
+        font-size: 52px;
         line-height: 90%; /* 100.033px */
     }
     .videop p span{text-decoration:none}
@@ -366,9 +373,9 @@ header {
         display: block;
         position: absolute;
         margin: auto;
-        margin-left: 15%;
+        margin-left: 31%;
         margin-top: 2;
-        max-width: 70;
+        max-width: 190;
     }
 }
 
@@ -441,7 +448,7 @@ header {
     .about{
         padding:30 110 20 110;}
     .abouttext h2{
-        font-size: 30px;
+        font-size: 32px;
     }
     .abouttext p{
         width: 350.135px;
@@ -467,7 +474,7 @@ header {
         max-width: 350px;
     }
     .abouttext h2{
-        font-size: 20px;
+        font-size: 32px;
         font-weight: 600;
     }
     .abouttext h2 svg{
@@ -874,6 +881,10 @@ header {
     border-radius: 0px;
     border-radius: 21px;
 }
+.swiper-button-next, .swiper-button-prev{
+    top: initial;
+    bottom: 0;
+}
 }
 /*
 .servicesgrid div::before{
@@ -1035,7 +1046,7 @@ header {
 }
 
 :root {
-    --swiper-navigation-color: #eeebeb;
+    --swiper-navigation-color: #eee;
     --swiper-pagination-color: #333333cc;
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
@@ -1475,7 +1486,7 @@ swiper-container:host{
     }
     .contactinfo{
         flex-direction: column;
-        width: 701px;
+        width: 401px;
     }
     .contactinfo h6{
         max-width: 238px;
@@ -1497,7 +1508,7 @@ swiper-container:host{
 @media screen and (max-width:700px) {
     .contactinfo{
         flex-direction: column;
-        width: 461px;
+        width: 361px;
     }
     .border{
         max-width: 350px;
@@ -1688,7 +1699,7 @@ form {
     .footerinfo{
         display: flex;
         flex-direction: column;
-        width: 410px;
+        max-width: 310px;
         height: 650px;
         margin: auto;
         margin-left: 0px;

@@ -82,3 +82,19 @@ window.addEventListener("scroll", reveal);
 
 // To check the scroll position on page load
 //reveal();
+
+//swiper arrows
+
+const swiper = new Swiper('.mySwiper4', {
+  loop: true,                         //loop
+  autoplay: {                         //autoplay
+      delay: 2000,  
+  },   
+  pagination: {                       //pagination(dots)
+      el: '.swiper-pagination',
+  },
+  navigation: {                       //navigation(arrows)
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+})
