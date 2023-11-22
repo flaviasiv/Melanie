@@ -84,17 +84,24 @@ window.addEventListener("scroll", reveal);
 //reveal();
 
 //swiper arrows
+const swiper = new Swiper('.mySwiper4', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
 
-const swiper = new swiper('.mySwiper4', {
-  loop: true,                         //loop
-  autoplay: {                         //autoplay
-      delay: 2000,  
-  },   
-  pagination: {                       //pagination(dots)
-      el: '.swiper-pagination',
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
   },
-  navigation: {                       //navigation(arrows)
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
-})
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
