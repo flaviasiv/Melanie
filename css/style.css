@@ -392,7 +392,7 @@ header {
     max-width: 3290px;
     margin: auto;
     height: 800;
-    background-image: url(./assets/about-bg.jpg);
+    background-image: url(../assets/about-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -408,6 +408,7 @@ header {
     font-family: 'Urbanist';
 }
 .about h2{
+    margin-top: 40px;
     display: flex;
     flex-direction: column;    
     justify-content: center;
@@ -450,6 +451,17 @@ header {
     line-height: 160%;
     letter-spacing: -0.5px;
 }
+
+.aboutreveal.reveal{
+    transform: translateX(-150%);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.aboutreveal.reveal.active{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
 .aboutimgmob{display: none;}
 @media screen and (max-width:1240px) {
     .about{
@@ -521,7 +533,7 @@ header {
         object-fit: cover;
     }
 .aboutcontainer{
-    background-image: url(./assets/about-bg-m.png);
+    background-image: url(../assets/about-bg-m.png);
     height: 1090px;
     max-height: 1900px;
     object-fit:cover;
@@ -696,7 +708,7 @@ header {
 }
 .servicecard1{
     position: relative;
-    background-image: url(./assets/Frame263.jpg);
+    background-image: url(../assets/Frame263.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     margin-right: 24px;
@@ -708,7 +720,7 @@ header {
 }
 .servicecard2{
     position: relative;
-    background-image: url(./assets/Frame264.jpg);
+    background-image: url(../assets/Frame264.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -719,7 +731,7 @@ header {
 }
 .servicecard3{
     position: relative;
-    background-image: url(./assets/Frame265.jpg);
+    background-image: url(../assets/Frame265.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-color: lightgray 50%;
@@ -733,7 +745,7 @@ header {
 }
 .servicecard4{
     position: relative;
-    background-image: url(./assets/Frame266.jpg);
+    background-image: url(../assets/Frame266.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -745,7 +757,7 @@ header {
 }
 .servicesprincipal {
     position: relative;
-    background-image: url(./assets/Frame268.jpg);
+    background-image: url(../assets/Frame268.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     border-radius: 20px;
@@ -766,6 +778,17 @@ header {
     top: 50%;
     transform: translateY(25%);
 }
+.cards.reveal{
+    position: relative;
+    transform: translateX(-150%);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.cards.reveal.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
 .myswiper4 {display: none;}
 @media screen and (max-width:900px) {
     .servicesgrid, .servicesprincipal{display: none;}
@@ -862,7 +885,7 @@ header {
 }
 .card1{
     position: relative;
-    background-image: url(./assets/Frame263.jpg);
+    background-image: url(../assets/Frame263.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -873,25 +896,25 @@ header {
 }
 .card2{
     position: relative;
-    background-image: url(./assets/Frame264.jpg);
+    background-image: url(../assets/Frame264.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .card3{
     position: relative;
-    background-image: url(./assets/Frame265.jpg);
+    background-image: url(../assets/Frame265.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .card4{
     position: relative;
-    background-image: url(./assets/Frame266.jpg);
+    background-image: url(../assets/Frame266.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
 .prin {
     position: relative;
-    background-image: url(./assets/Frame268m.jpg);
+    background-image: url(../assets/Frame268m.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     border-radius: 0px;
@@ -1080,6 +1103,10 @@ header {
     cursor: grab;
     height: fit-content;
 }
+.mySwiper swiper-slide:hover > .swipercontent{
+    opacity: 0.8;
+    transition: 1s all ease;
+}
 @media screen and (max-width:1650px) {
     .mySwiper{
         padding: 0 100 0 100;}
@@ -1102,7 +1129,7 @@ swiper-slide {
     flex-direction: column;
     width: 100%;
     max-width: 546px;
-    height: 223.673px;
+    height: 243.673px;
     margin:auto;
     margin-bottom: 80px;
     justify-content: center;
@@ -1110,6 +1137,7 @@ swiper-slide {
     font-family: 'Urbanist', sans-serif;
     background-color: #FFF;
     border-radius: 20px;
+    padding: 16px 20px;
 }
 .swipercontent h2{
     font-family: 'Urbanist', sans-serif;
@@ -1132,7 +1160,7 @@ swiper-slide {
     justify-content: center;
     text-align: center;
     left: 50%;
-    top: 38%;
+    top: 34%;
     transform: translate(-49%, -50%);
 }
 swiper-slide p{
@@ -1282,6 +1310,10 @@ swiper-container:host{
     max-width: 250px;
     margin: auto;
 }
+.mySwiper2 .swiper2:hover > img{
+    max-width: 260px;
+    transition: 1s all ease;
+}
 
 .objecttitle{
     background-color: #000;
@@ -1365,6 +1397,15 @@ swiper-container:host{
     text-decoration: none;
     color: #259395;
     opacity: 0.6;
+}
+.teamgridcard img{
+    width: 100%;
+}
+.teamgridcard:hover > img{
+    width: calc(100% + 5%);
+    margin-left: -2.5%;
+    margin-bottom: -5%;
+    transition: 1s all ease;
 }
 @media screen and (max-width:990px) {
     .teamcontainer{

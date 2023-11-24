@@ -5,8 +5,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="swiper-bundle.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Melanie's - Business Consulting</title>
   <link rel="icon" type="image/x-icon" href="./assets/logo-vid.png">
   <meta name="author" content="Flavia Sigoli"/>
@@ -93,12 +93,12 @@
         <div class="aboutcontainer">
             <div class="about" id="about">
               <div class="abouttext">
-                <h2>About us
+                <h2 class="reveal aboutreveal">About us
                   <svg width="74" height="5" viewBox="0 0 74 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 2.5C0 1.39543 0.895431 0.5 2 0.5H72C73.1046 0.5 74 1.39543 74 2.5V2.5C74 3.60457 73.1046 4.5 72 4.5H2C0.895429 4.5 0 3.60457 0 2.5V2.5Z" fill="#9BEBEC"/>
                     </svg>                    
                 </h2>
-                <p><br><br>Established in <span style="font-weight:bold;">Columbus, OH</span>, Melanie’s Business Consulting provides in person and online business consulting services Nationwide.
+                <p class="reveal aboutreveal"><br><br>Established in <span style="font-weight:bold;">Columbus, OH</span>, Melanie’s Business Consulting provides in person and online business consulting services Nationwide.
                 <br><br>
                 With over 5 years of experience, Melanie’s Business Consulting has contributed to the growth of more than 50 small businesses, providing 
                 turn-key support services for establishing a business as well as financial, marketing and commercial solutions.
@@ -108,10 +108,10 @@
                 Additionally: <br>
                 · Achieve sustainable growth and long-term success, growing small operations into resilient and prosperous ventures.
               <br>· Optimize operations, expand market share, enhance profitability, and overcome obstacles.</p>
-                <h6>Melanie’s Business Consulting understands how the elements
+                <h6 class="reveal aboutreveal">Melanie’s Business Consulting understands how the elements
                 of transformation fit together and how you can
                 elevate your business to the next level!</h6>
-                <span>Count on us for your business <br>
+                <span class="reveal aboutreveal">Count on us for your business <br>
                   needs and <span style="font-weight:bold;color:#9BEBEC">be ready for your success!</span> </span>
               </div>
             </div>
@@ -125,7 +125,7 @@
                 <p>That will help you <span style="font-weight:bold;">plan, start, develop</span> and <span style="font-weight:bold;">grow</span> your business. Count on us for this excited journey.</p>
             </div>
             <div class="servicesgrid">
-                <div class="servicecard1">
+                <div class="reveal cards servicecard1">
                   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="1" clip-path="url(#clip0_432_1191)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5356 44.0002H42.4659C43.3129 44.0002 44.0007 43.3124 44.0007 42.4653C44.0007 41.6182 43.3129 40.9304 42.4659 40.9304H1.5356C0.688547 40.9304 0.000732422 41.6182 0.000732422 42.4653C0.000732422 43.3124 0.688547 44.0002 1.5356 44.0002Z" fill="currentColor"/>
@@ -154,7 +154,7 @@
                         <li><span style="font-weight:bold;color:#9BEBEC;letter-spacing:1">Licenses</span> </li>
                     </ul>
                 </div>
-                <div class="servicecard2">
+                <div class="reveal cards servicecard2">
                   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_63_1218)">
                     <g clip-path="url(#clip1_63_1218)">
@@ -182,7 +182,7 @@
                       <li><span style="font-weight:bold;color:#9BEBEC;letter-spacing:1">Professional Uniforms</span></li>
                     </ul>
                 </div>
-                <div class="servicecard3">
+                <div class="reveal cards servicecard3">
                   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="1" clip-path="url(#clip0_63_1224)">
                     <g clip-path="url(#clip1_63_1224)">
@@ -209,7 +209,7 @@
                       <li><span style="font-weight:bold;color:#9BEBEC;letter-spacing:1">Preparing Sales Agreement or Client / Service Contract</span></li>
                     </ul>
                 </div>
-                <div class="servicecard4">
+                <div class="reveal cards servicecard4">
                   <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="1" clip-path="url(#clip0_63_1212)">
                     <g clip-path="url(#clip1_63_1212)">
@@ -246,7 +246,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="servicesprincipal">
+            <div class="reveal cards servicesprincipal">
               <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="1">
                 <g clip-path="url(#clip0_17_2062)">
@@ -275,7 +275,7 @@
                 </ul>
             </div>
             
-          <swiper-container class="mySwiper4" pagination="true" pagination-clickable="true" navigation="true" space-between="0"
+          <swiper-container class="mySwiper4 reveal cards" pagination="true" pagination-clickable="true" navigation="true" space-between="0"
           loop="true">
           <swiper-slide>
             <div class="swiper4card card1">
@@ -617,6 +617,21 @@
           <swiper-slide class="swiper2"><img src="./assets/swiper9.png" alt="" draggable="false"></swiper-slide>
           <swiper-slide class="swiper2"><img src="./assets/swiper10.png" alt="" draggable="false"></swiper-slide>
           <swiper-slide class="swiper2"><img src="./assets/swiper11.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper12.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper13.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper1.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper2.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper3.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper4.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper5.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper6.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper7.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper8.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper9.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper10.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper11.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper12.png" alt="" draggable="false"></swiper-slide>
+          <swiper-slide class="swiper2"><img src="./assets/swiper13.png" alt="" draggable="false"></swiper-slide>
         </swiper-container>
         <div class="teamcontainer">
           <h2>Our team
@@ -625,19 +640,19 @@
               </svg>
           </h2>
           <div class="teamgrid">
-            <div class="teamgridcard">
+            <div class="teamgridcard reveal cards">
               <img src="./assets/team-1.jpg" alt="" draggable="false">
               <h3>Juliana Souza</h3>
               <p>CEO / Owner</p>
               <a href="#">LINKEDIN</a>
             </div>
-            <div class="teamgridcard">
+            <div class="teamgridcard reveal cards">
               <img src="./assets/team-2.jpg" alt="" draggable="false">
               <h3>Janinne Telez</h3>
               <p>Marketing Assistant</p>
               <a href="#">LINKEDIN</a>
             </div>
-            <div class="teamgridcard">
+            <div class="teamgridcard reveal cards">
               <img src="./assets/team-3.jpg" alt="" draggable="false">
               <h3>Lucas Moraes</h3>
               <p>Creative Director</p>
@@ -729,7 +744,8 @@
         
 
     </footer>
-    <script src="javascript.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
