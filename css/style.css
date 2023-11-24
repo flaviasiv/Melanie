@@ -375,15 +375,14 @@ header {
         font-size: 52px;
         line-height: 90%;
     }
-    /* .videop p span{text-decoration:none} */
-    .videop p svg{
+    /* .videop p svg{
         display: block;
         position: absolute;
         margin: auto;
         margin-left: 31%;
         margin-top: 8px;
         max-width: 180;
-    }
+    }*/
 }
 
 .aboutcontainer{
