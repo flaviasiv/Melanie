@@ -653,14 +653,14 @@ header {
 .servicecard1, .servicecard2{
     border-radius: 20px;
     width: 546px;
-    height: 603px;
-    padding:30px;
+    height: 563px;
+    padding:40px;
 }
 .servicecard3, .servicecard4{
     border-radius: 20px;
     width: 546px;
-    height: 453px;
-    padding:30px;
+    height: 403px;
+    padding:40px;
 
 }
 .servicesgrid ul, .servicesprincipal ul {
@@ -750,8 +750,8 @@ header {
     background-size: cover; 
     border-radius: 20px;
     max-width:1162px;
-    height: 370px;
-    padding:30px;
+    height: 330px;
+    padding:40px;
     color: #FFF;
     margin-top: 25px;
 }
