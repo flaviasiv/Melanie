@@ -327,7 +327,14 @@ header {
     line-height: 100%; /* 100.033px */
     top: 50%;
 }
-.videop p span{text-decoration:underline#9BEBEC 4px;text-underline-offset:15px;}
+.videop p span{
+    text-decoration:underline#9BEBEC 6px !important;
+    text-underline-offset:15px !important;
+    -webkit-text-decoration-line:  underline !important;
+    -webkit-text-decoration-color: #9BEBEC !important;
+    -webkit-text-decoration-style: solid !important;
+    -webkit-text-decoration-thickness: 6px !important;
+}
 .videop p svg{display: none;}
 @media screen and (max-width:1200px) {
     .videop img{
@@ -366,16 +373,16 @@ header {
         width: 100%;
         max-width: 317px;
         font-size: 52px;
-        line-height: 90%; /* 100.033px */
+        line-height: 90%;
     }
-    .videop p span{text-decoration:none}
+    /* .videop p span{text-decoration:none} */
     .videop p svg{
         display: block;
         position: absolute;
         margin: auto;
         margin-left: 31%;
-        margin-top: 2;
-        max-width: 190;
+        margin-top: 8px;
+        max-width: 180;
     }
 }
 
@@ -515,7 +522,7 @@ header {
     }
 .aboutcontainer{
     background-image: url(./assets/about-bg-m.png);
-    height: 1050px;
+    height: 1090px;
     max-height: 1900px;
     object-fit:cover;
     margin: auto;
@@ -538,8 +545,8 @@ header {
     justify-content: center;
     font-size: 32px;
     font-weight: 600;
-    margin-top: 64px;
-    margin-bottom: 230;
+    margin-top: 60px;
+    margin-bottom: 290;
 }
 .about h2 svg{
     display: flex;
@@ -548,14 +555,20 @@ header {
     transform: translateX(185%);
 }
 .abouttext{  
-    float: left;}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-3%);
+}
 .abouttext p{
     width: 361.135px;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
-    padding: 0 16px;
+    padding: 0;
 }
 .abouttext p span{
     font-size: 14px;
@@ -1092,8 +1105,6 @@ swiper-slide {
     height: 223.673px;
     margin:auto;
     margin-bottom: 80px;
-    padding: auto;
-    padding-top: 18px;
     justify-content: center;
     text-align: center;
     font-family: 'Urbanist', sans-serif;
@@ -1102,7 +1113,7 @@ swiper-slide {
 }
 .swipercontent h2{
     font-family: 'Urbanist', sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 600;
     color: #259395;
@@ -1156,13 +1167,14 @@ swiper-container:host{
         height: fit-content;
     }
     .mySwiper3 .swipercontent{
-        max-width: 386px;
-        height: 303.673px;
+        max-width: 356px;
+        height: 250px;
         margin-bottom: 60px;
-        padding: 40px 24px;
-    }
+        padding: 20px 24px;
+    }    
     .mySwiper3 .swipercontent h2{
-        font-size: 24px;
+        justify-content: center;
+        font-size: 20px;
         font-weight: 700;
     }
     .mySwiper3 .swipercontent h6{
@@ -1170,7 +1182,7 @@ swiper-container:host{
         line-height: 158%; 
         color: #259395;
         font-family: 'Calibri';
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
     }
     .mySwiper3 .swipercontent svg{
@@ -1178,7 +1190,7 @@ swiper-container:host{
         justify-content: center;
         text-align: center;
         left: 50%;
-        top: 37%;
+        top: 31%;
         transform: translate(-49%, -50%);
     }
     swiper-slide p{
@@ -1187,7 +1199,7 @@ swiper-container:host{
         color: #000;
         font-family: 'Urbanist', sans-serif;
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 120%; /* 18.2px */
     }
     :root {
@@ -1205,9 +1217,7 @@ swiper-container:host{
     }
     .swipercontent h2{
         font-size: 18px;
-        font-weight: 500;
         font-weight: 700;
-        
     }
     .swipercontent h6{
         margin-top: 0px;
@@ -1261,12 +1271,16 @@ swiper-container:host{
 }
 .swiper2 {
   text-align: center;
-  font-size: 18px;
   background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.swiper2 img{
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
 }
 
 .objecttitle{
