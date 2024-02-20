@@ -20,19 +20,7 @@ header {
     width:100%;
     max-width:3900px;
     margin: auto;
-}/*
-#home {
-    color:#fff;
-    display:flex;
-    justify-content: space-between;
-    position: fixed;
-    right: 0;
-    padding:28px 0px;
-    width: 100%;
-    max-width: 1440px;
-    margin: auto;
-    align-items: center;
-}*/
+}
 .nonebar{
     display: block;
     position: relative;
@@ -920,28 +908,6 @@ header {
     bottom: 0;
 }
 }
-/*
-.servicesgrid div::before{
-    content: "";
-    background-color: rgba(0, 0, 0, 0.13);
-    border-radius: 32px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    color: #FFF;
-}
-.servicesprincipal::before{
-    content: "";
-    background-color: rgba(0, 0, 0, 0.267);
-    border-radius: 32px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-}*/
 .growthcontainer{
     background: #000;
     width: 100%;
@@ -1359,13 +1325,21 @@ swiper-container:host{
 .teamgrid{
     display: flex;
     justify-content: space-between;
-    height: 640px;
+    height: 1490px;
     width: 100%;
-    max-width: 1116px;
+    max-width:715px;
     margin: auto;
     color: #FFF;
     margin-bottom: 100px;
     text-align: left;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+.teamgrid > div {
+    flex: 150%; 
+}
+.teamgridcard{
+    max-width: 330px;
 }
 .teamgridcard h3{
     margin-top: 82px;
@@ -1395,12 +1369,13 @@ swiper-container:host{
 }
 .teamgridcard img{
     width: 100%;
+    max-width: 320px;
 }
 .teamgridcard:hover > img{
-    width: calc(100% + 5%);
+    max-width: 330px;
     margin-left: -2.5%;
-    margin-bottom: -5%;
-    transition: 1s all ease;
+    margin-bottom: -4%;
+    transition: 1s all ease-in-out;
 }
 @media screen and (max-width:990px) {
     .teamcontainer{
