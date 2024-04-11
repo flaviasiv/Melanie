@@ -382,6 +382,7 @@ header {
     background-image: url(../assets/about-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: #000300;
 }
 .about{
     position: relative;
@@ -449,8 +450,8 @@ header {
     margin-top: 30px;
 }
 .aboutreveal.reveal{
-    transform: translateX(-150%);
-    opacity: 0;
+    transform: translateX(-50%);
+    opacity: 0.2;
     transition: 1s all ease;
 }
 .aboutreveal.reveal.active{
@@ -459,13 +460,11 @@ header {
 }
 
 .aboutimgmob{display: none;}
-@media screen and (max-width:1240px) {
-}
-@media screen and (max-width:1240px) {
+/* @media screen and (max-width:1240px) {
     .about{
         padding:0 100 20 110;}
     .aboutcontainer{
-        height: 1000;
+        height:900px;
     }
     .abouttext{   
     width: 100%;
@@ -504,7 +503,7 @@ header {
         line-height: 100%;
         letter-spacing: 0.8px;
     }
-}
+} */
 @media screen and (max-width:1080px) {
     /*mobile version*/
     .aboutcontainer img{
@@ -763,8 +762,8 @@ header {
 }
 .cards.reveal{
     position: relative;
-    transform: translateX(-150%);
-    opacity: 0;
+    transform: translateX(-50%);
+    opacity: 0.2;
     transition: 1s all ease;
 }
 .cards.reveal.active{
@@ -1836,7 +1835,6 @@ form {
     }
 }
 @media screen and (max-width:770px) {
-    
     .form{
         width: 360px;
         margin: auto;
