@@ -1514,7 +1514,7 @@ swiper-container:host{
         display: none;
     }
     .contact{
-        padding-bottom: 42px;
+        padding-bottom: 142px;
     }
     .contactinfo{
         flex-direction: column;
@@ -1674,24 +1674,32 @@ form {
     gap: 20px;
 }
 .rights{
+    display: flex;
+    justify-content: space-between;
     position: relative;
     height: 91px;
     width: 100%;
-    max-width: 2990px;
+    max-width:1200px;
     margin: auto;
     margin-top: 200px;
-    padding: 34px 0;
+    padding: 34px;
     background-color: #9BEBEC;
     align-items: center;
     text-align: center;
+    color: #4E4E4E;
+}
+.rights ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
 }
 .rights p{
-    color: #4E4E4E;
     font-family: 'Urbanist';
     font-size: 14.4px;
     font-weight: 500;
     line-height: 150%;
 }
+
 @media screen and (max-width:1000px) {
     footer{
         position: relative;
@@ -1830,9 +1838,10 @@ form {
         gap: 20px;
     }
     .rights{
+        flex-direction: column;
         height: 60px;
         padding: 24px 0;
-        margin-top: 510px;
+        margin-top: 540px;
     }
     .rights p{
         font-size: 11px;
