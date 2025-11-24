@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Urbanist';
 }
@@ -25,7 +24,7 @@ header {
     display: block;
     position: relative;
     background-color: transparent;
-    width: 230px;
+    width: 300px;
 }
 .navbar{   
     z-index: 999;
@@ -87,7 +86,7 @@ header {
     align-items: center;
     margin: 0 auto;
     justify-content:space-between;
-    width:270px;
+    width:300px;
     gap: 8px;
     text-align: center;
 }
@@ -122,8 +121,7 @@ header {
   transition: 0.5s ease-out;
   letter-spacing: 1.2px;
 }
-.btn-toggle{display: none;}
-    
+.btn-toggle{display: none;}    
 @media only screen and (max-width: 1000px) {
     .nonebar{display: none}
   .box{
@@ -145,8 +143,7 @@ header {
     flex-direction:column;
     justify-content:space-between;
     width:15px;
-    height:15px;
-    
+    height:15px;    
 }
 .btn-toggle .bar {
     height:3px;
@@ -366,22 +363,13 @@ header {
         font-size: 52px;
         line-height: 90%;
     }
-    /* .videop p svg{
-        display: block;
-        position: absolute;
-        margin: auto;
-        margin-left: 31%;
-        margin-top: 8px;
-        max-width: 180;
-    }*/
 }
-
 .aboutcontainer{
     position: relative;
     width: 100%;
     max-width: 3290px;
     margin: auto;
-    height: 900;
+    height: 800px;
     background-image: url(../assets/about-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -517,7 +505,8 @@ header {
     }
 .aboutcontainer{
     background-image: url(../assets/about-bg-m.png);
-    height: 1090px;
+    background-position: 50%;
+    height: 1050px;
     max-height: 1990px;
     object-fit:cover;
     margin: auto;
